@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Candi Prambanan</title>
+      <link rel="icon" type="image/png" href="https://files.catbox.moe/3xwob6.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/my.css" rel="stylesheet">
+</head>
+<body>
+   <!--banner-->
+    <div id="banner">
+      <img src="picture/banner.jpeg" alt="banner">
+    </div>
+    
+    <!--navigasi-->
+    <nav class="navbar-custom">
+  <ul class="nav nav-underline">
+    <li class="nav-item">
+      <a class="nav-link active" href="index.html">BERANDA</a>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="sejarah02.html">SEJARAH</a></li>
+    <li class="nav-item"><a class="nav-link" href="legenda03.html">LEGENDA</a></li>
+    <li class="nav-item"><a class="nav-link" href="galeri04.html">GALERI</a></li>
+    <li class="nav-item"><a class="nav-link" href="pesan05.html">PESAN</a></li>
+  </ul>
+
+  <div class="nav-right"></div>
+    <span id="waktuNavbar"></span>
+</nav>
+    <!--navigasi-->
+    <!--form-->
+<section id="form" class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+
+        <div class="card p-4 shadow-sm">
+          <h1 class="text-center mb-4">Tinggalkan Pesan</h1>
+
+          <form>
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">
+                Alamat Email
+              </label>
+              <input type="email" class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="nama@gmail.com" required>
+            </div>
+
+            <div class="mb-4">
+              <label for="exampleDataList" class="form-label">Apakah kamu pernah mengunjungi candi prambanan?</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Pilih di sini...">
+            <datalist id="datalistOptions">
+              <option value="Pernah">
+              <option value="Tidak pernah">
+            </datalist>
+          </div>
+
+            <!-- Pesan -->
+            <div class="mb-5">
+              <label for="exampleFormControlTextarea1" class="form-label">
+                Pesan & Kesan tentang candi prambanan
+              </label>
+              <textarea class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="4"
+                placeholder="Tulis pesan Anda di sini..."></textarea>
+            </div>
+
+            <!-- Range -->
+            <div class="mb-5">
+              <label for="range4" class="form-label">
+                Seberapa suka kamu dengan candi prambanan?
+              </label>
+
+              <div class="d-flex align-items-center gap-3">
+                <input type="range" class="form-range"
+                  min="0" max="100" value="50" id="range4">
+                <span class="badge bg-dark" id="rangeValue">50</span>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">
+                Kirim
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--form-->
+<!--footer-->
+<footer class="footer">
+  <div class="container">
+    <p class="footer-text">
+      &copy; Copyright - Dian Syarifah Ramadhani | 251011700798 | 01SIFP013 | 2026
+    </p>
+  </div>
+</footer>
+<!--footer-->
+
+<script src="javascript/waktu.js"></script>
+<script src="javascript/pesan.js"></script>
+
+</body>
+</html>
